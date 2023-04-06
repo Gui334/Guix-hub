@@ -1,0 +1,45 @@
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/astraln/SentinelUILIB/main/UI.lua', true))()
+
+local window = Library:Window('Guix hub')
+
+local tab = window:Tab('Nice scripts')
+
+local tab2 = window:Tab('Games')
+
+tab:Button('Infinite yield', function()
+
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+tab2:Button('Doors Nerd gui V3', function()
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/DoorsV3_ByNerd.lua"))()
+
+end) 
+
+tab2:Label(end of scripts yessirrrrr")
+
+end) 
+
+tab:Keybind("Keybind", Enum.KeyCode.E, function(t)
+
+   
+
+end)
+
+local dropdown = tab:Dropdown("Dropdown", {"1", "2",'3','4','5','6','7','8'}, function(item)
+
+    print(item)
+
+end)
+
+tab:Button('Refresh', function()
+
+    dropdown:RefreshDropdown({'69'})
+
+end)
+
+tab:Slider("Slider", 16, 1000, 16, function()
+
+end)
